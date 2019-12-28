@@ -1,0 +1,116 @@
+.my-account-content{
+  margin-top: 22px;
+  margin-left: 40px;
+}
+
+/*为使和input对齐*/
+.ivu-form .ivu-form-item-label {
+  line-height: 2;
+}
+
+.specialHandle{
+  margin-left: 127px;
+}
+.my-select-text {
+  position: absolute;
+  left: 90px;
+  top: 0;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 20px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #425263;
+}
+
+.bank-input input {
+  width: 48%;
+}
+
+.clrearable .ivu-input-icon{
+  height: 55px;
+  line-height: 55px;
+  left: 45%;
+  right: 0;
+}
+//y银行卡表格
+.bank-table-box{
+  margin-left: 30px;
+  .my-list-table{
+    width: 54%;
+  }
+}
+//账户表格
+.account-table-box{
+  margin-left: 30px;
+  .my-list-table{
+    width: 54%;
+    border-collapse: collapse;
+  }
+  .my-list-table, td {
+    border: 1px solid #DDE1ED;
+  }
+
+  .my-list-table-content{
+    &:hover{
+      background: #EEF0F8 !important;
+    }
+  }
+}
+.account-tr{
+  td{
+    width: 33.3333%;
+  }
+}
+
+.bankCardRes{
+  margin-top: 54px;
+  .bank-text{
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #425263;
+    .msg{
+      font-family: PingFangSC-Regular;
+      font-size: 16px;
+      color: #62717E;
+      font-weight: bold;
+    }
+  }
+  .result-title{
+    display: block;
+    margin: 30px 0px 30px 30px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #425263;
+  }
+
+  color:#fff !important;
+  width: 100%;
+  margin: 50px 0px 30px 0px;
+  p {
+    color: #13B3FC;
+    font-size: 20px;
+    font-weight: 600;
+    .msg{
+      margin-left: 5px;
+    }
+  }
+  .res{
+    color: #fff;
+    margin-top: 20px;
+  }
+}
+
+
+.bank-select{
+  .ivu-select-selected-value{
+    text-align: center;
+  }
+  .ivu-select-item{
+    text-align: center !important;
+  }
+  .ivu-select-placeholder{
+    color:#A1ADB6 !important;
+  }
+}

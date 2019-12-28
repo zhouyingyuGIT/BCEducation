@@ -1,0 +1,717 @@
+
+.ivu-layout-header {
+  padding: 0 19px !important;
+}
+
+
+
+//**面包屑**
+.my-breadCrumb{
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  padding-left: 20px;
+  background: #F5F7FE;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #62717E;
+  text-align: left;
+  border-bottom: 1px solid #CCD0DC;
+}
+//content
+.layout-content-box{
+  background: #D7DAE3;
+  /*background: url('../assets/images/bg.png') center center;*/
+}
+
+.layout-content {
+  height: calc(100vh - 70px);
+}
+.my-content{
+  min-height:86vh;
+  //width: 100%;
+  margin: 15px 15px 0px 15px;
+  padding-bottom: 20px;
+  //padding-left:28px;
+  //padding: 25px 60px;
+  background: #EEF0F8;
+  border-radius: 5px;
+}
+.my-menu-name{
+  height: 60px;
+  line-height: 60px;
+  padding-left: 28px;
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #425263;
+  text-align: left;
+  border-bottom: 1px solid #D7DAE3;
+}
+
+.my-text-tip{
+  width: 990px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 18px;
+  margin: 10px 0px 41px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #62717E;
+  text-align: left;
+  background: #E6F2FF;
+  border: 1px dashed #1585FF;
+  border-radius: 3px;
+  img{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -3px;
+  }
+  span{
+    margin-right: 30px;
+  }
+}
+.my-tab-content{
+  margin-left: 20px;
+}
+
+
+
+.my-serach-tip{
+  height: 25px;
+  line-height: 25px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #62717E;
+  text-align: left;
+  background: #E6F2FF;
+  border: 1px solid #1585FF;
+  border-radius: 3px;
+  img{
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -5px;
+  }
+  span{
+    margin-right: 20px;
+  }
+}
+
+
+/*表格start*/
+.my-list-table-box{
+  margin: 22px 40px 0px;
+  //表格暂无数据
+  .tempEmpty{
+    height: 50px;
+    line-height: 50px;
+    font-family: PingFang-SC-Bold;
+    font-size: 16px;
+    color: #425263;
+    text-align: center;
+  }
+  .my-list-table{
+    border-collapse: collapse;
+    td,th{
+      border-bottom: 1px solid #DDE1ED;
+    }
+  }
+  .my-list-table, td, th {
+    //border: 1px solid #E4E4E4;
+  }
+
+  .my-list-table{
+    width: 100%;
+    text-align: center;
+    .my-list-table-header{
+      height: 50px;
+      background: #2E3C6A;
+      border-radius: 3px 3px 0 0;
+      th{
+        height: 50px;
+        line-height: 50px;
+        font-family: PingFang-SC-Bold;
+        font-size: 16px;
+        color: #FFFFFF;
+      }
+      .my-table-header1{
+        width: 40%;
+        text-align: left;
+        padding-left: 50px;
+      }
+      .my-table-header2{
+        width: 60%;
+        text-align: left;
+        padding-left: 50px;
+      }
+    }
+    .my-list-table-content{
+      cursor: pointer;
+        &:hover{
+          background: #EFF2FF;
+        }
+      td{
+        line-height: 50px;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: #425263;
+      }
+      .toRoute{
+        cursor: pointer;
+        text-align: left;
+      }
+    }
+    .listTable{
+      text-align: left !important;
+      td{
+        line-height: 25px;
+        padding: 20px 20px 20px 50px;
+      }
+    }
+  }
+}
+/*表格end*/
+
+
+//自定义input
+.my-input{
+  width:60%;
+  height: 55px !important;
+  line-height: 55px !important;
+  font-family: PingFangSC-Regular;
+  font-size: 18px !important;
+  color: #62717E;
+  background: #F8FAFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 3px;
+  border-radius: 3px;
+  padding-left: 17px;
+  outline: none;
+}
+
+//自定义button
+.my-btn{
+  width: 80px;
+  height: 40px;
+  margin-right: 10px;
+  outline: none;
+  //background-image: linear-gradient(100deg, #3E7FFF 0%, #5979FE 99%);
+  //box-shadow: 0 3px 4px 0 rgba(86,121,254,0.30);
+  font-family: PingFangTC-Regular;
+  font-size: 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 0 !important;
+  border-color: transparent !important;
+  background: #1585FF;
+  border-radius: 3px;
+  box-shadow: none!important;
+
+}
+
+.my-btn:hover{
+  color:#fff !important;
+  background: #1585FF;
+}
+
+.my-reset-btn{
+  width: 80px;
+  height: 40px;
+  margin-right: 10px;
+  outline: none;
+  background: #F8FAFF;
+  border: 1px solid #D7DAE3;
+  border-radius: 3px;
+  font-family: PingFangTC-Regular;
+  font-size: 16px;
+  color: #425263;
+  cursor: pointer;
+  padding: 0 !important;
+  box-shadow: none!important;
+}
+
+.my-reset-btn:hover{
+  background: #F8FAFF;
+  border: 1px solid #D7DAE3;
+  color: #425263;
+}
+
+
+/*侧边栏*/
+.ivu-layout-sider{
+  max-width: 240px !important;
+  min-width: 240px !important;
+  width: 24px !important;
+  padding-top: 20px;
+  /*border-right: 15px solid #031124;*/
+  background: #111B39 !important;
+}
+
+.ivu-layout .ivu-layout-has-sider {
+  height: 100%;
+}
+
+
+//解决select input 阻挡
+
+ .spec_lable .ivu-form-item-content{
+  margin-left: 0px !important;
+}
+
+
+.spec_input input {
+  width: 293px;
+}
+
+.dateTime_input .ivu-input {
+  width: 245px;
+}
+
+.ivu-form-item{
+  margin-bottom: 25px;
+}
+
+
+.my-title{
+  font-family: PingFang-SC-Regular;
+  font-size: 20px;
+  color: #81A0D0;
+  margin-bottom: 30px;
+}
+
+/*单条查询-批量查询-label*/
+.tem_label .ivu-form-item-label {
+  line-height: 150px !important;
+}
+
+/*字体大小*/
+.ivu-form-item-label{
+  font-family: PingFangSC-Regular;
+  font-size: 16px !important;
+  line-height: 2;
+  color: #425263;
+}
+
+/*input相关*/
+.ivu-input{
+  width: 220px;
+  height: 50px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #62717E;
+  background: #F8FAFF;
+  border: 1px solid #D7DAE3;
+  border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+
+.ivu-input-default{
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #62717E;
+}
+.ivu-input-with-suffix{
+  color:#62717E !important;
+}
+input::-webkit-input-placeholder{
+  color:#A1ADB6 !important;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+}
+//input错误提示
+.ivu-form-item-error-tip{
+  font-family: PingFangSC-Regular;
+  color: #EE2424;
+  font-size: 16px !important;
+  padding: 6px 0 6px !important;
+}
+//input错误提示-登录
+.login-con .verCodeItem .ivu-form-item-error-tip {
+  margin-left: 350px;
+}
+.login-con .ivu-form-item-error-tip {
+  margin-left: 150px;
+  font-size: 16px !important;
+}
+.login-con .ivu-form-item {
+  margin-bottom: 30px;
+}
+
+
+
+/*日期*/
+//.ivu-input-prefix i, .ivu-input-suffix i {
+//  font-size: 16px;
+//  line-height: 38px;
+//  color: #77797F;
+//}
+
+.count_number .formWidth{
+  width: 37% !important;
+}
+
+//iview-select
+/*.spe_select .ivu-select{
+  width: 160px !important;
+}*/
+
+.ivu-select{
+  //width: 220px !important;
+  height: 50px;
+  line-height: 50px;
+  //background: #FAFAFA !important;
+  border-radius: 3px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #62717E;
+  outline: none;
+}
+.ivu-select-single .ivu-select-selection
+.ivu-select-selected-value {
+  height: 50px !important;
+  line-height: 50px !important;
+  color:#62717E !important;
+  font-size: 16px !important;
+}
+
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder{
+  height: 50px !important;
+  line-height: 50px !important;
+  color:#A1ADB6 !important;
+  font-size: 16px !important;
+}
+
+
+//select 下拉框文本
+.ivu-select-item{
+  background: #F8FAFF;
+  font-size: 16px !important;
+  color:#62717E;
+}
+
+.ivu-select-input{
+  font-size: 16px;
+  color:#62717E;
+}
+
+.ivu-select-selection{
+  width: 100%;
+  height: 50px !important;
+  line-height: 50px !important;
+  color:#62717E !important;
+  background: #F8FAFF !important;
+  border: 1px solid #D7DAE3;
+}
+
+
+.spe_select .ivu-select-input {
+  z-index: 9999;
+  font-size: 16px;
+}
+
+/*登录框*/
+.login-page .login-form .ivu-input{
+  background: #fff !important;
+  border:1px solid #ddd !important;
+}
+.login-page .login-form  .ivu-form-item-error .ivu-input{
+  border: 1px solid #ed4014 !important;
+}
+
+.verCodeItem .ivu-form-item-content {
+  margin-left: -159px;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+/*input[type=text]:focus, input[type=password]:focus, textarea:focus {*/
+/*  -webkit-box-shadow: 0 0 0 1000px white inset;*/
+/*  border:solid 1.5px #2c97de;*/
+/*}*/
+.ivu-card-head{
+  padding: 20px 16px;
+}
+
+.ivu-card-head span{
+  font-size: 20px !important;
+}
+
+
+/*modal common css修改*/
+.ivu-btn-primary {
+  width: 150px;
+  font-size: 18px;
+}
+
+
+
+//    日期对齐
+.ivu-input-prefix i, .ivu-input-suffix i{
+  line-height: 50px;
+}
+
+.ivu-tabs{
+  min-height: 640px !important;
+}
+
+//弹出框 - css 定制化
+.menuList {
+  .ivu-modal-content{
+    min-height: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+      .menuBoxList {
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 15px;
+        .menuBox {
+          margin-left: 15px;
+          margin-right: 15px;
+          .api-item-name{
+            text-align: center;
+            font-size: 18px !important;
+            color:#fff;
+            overflow: hidden;
+            height: 38px;
+          }
+          .listInfo {
+            cursor: pointer;
+          }
+          img {
+            width: 120px;
+          }
+
+        }
+      }
+
+  }
+  .ivu-modal-footer {
+    display: none;
+  }
+}
+
+//监管法规查询 搜索框-css
+.searchInput .ivu-input-wrapper {
+  display: inline;
+}
+.searchInput .ivu-input-default {
+  border: 2px solid #429dff;
+  width: 580px;
+}
+.searchInput .searchBtn {
+  height: 50px;
+  width: 80px;
+  margin-left: -8px;
+  margin-top: -3px;
+}
+.searchInput .searchBtn .ivu-icon {
+  font-size: 22px;
+  margin-left: -4px;
+  margin-top: -3px;
+}
+.searchInput .ivu-input-icon-clear {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.contents .ivu-page {
+  background: rgb(238, 238, 238);
+  padding: 20px;
+  text-align: right;
+}
+//行业数据分享 -css
+.inputSearch {
+  padding: 20px 0 20px 0;
+  .ivu-input-wrapper {
+    display: inline;
+    .ivu-input-default{
+      border: 1px solid #429dff;
+      width: 250px;
+      height: 40px;
+    }
+  }
+  .searchBtn {
+    font-size: 16px;
+    margin-top: -4px;
+    height: 40px;
+    width: 80px;
+  }
+}
+.dataShareModel {
+  .ivu-modal-content {
+    background: #EEF0F8;
+  }
+  .ivu-modal-footer {
+    text-align: center;
+    .ivu-btn {
+      margin-bottom: 20px;
+      width: 130px;
+      height: 38px;
+    }
+  }
+}
+
+
+
+//模态框样式
+.my-modal-body-box{
+  .ivu-form .ivu-form-item-label{
+    line-height: 1;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #425263;
+  }
+  .ivu-radio-wrapper{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #62717E;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 30px;
+  }
+  .ivu-radio-inner{
+    top:-1px;
+  }
+}
+//复核模态框
+.my-review-body-box{
+  .ivu-radio-wrapper{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #62717E;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 30px;
+  }
+  .ivu-radio-inner{
+    top:-1px;
+  }
+  .ivu-form .ivu-form-item-label{
+    line-height: 1;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #425263;
+  }
+  textarea.ivu-input{
+    width: 470px;
+    height: 182px;
+    padding:10px 15px;
+    overflow-y: auto;
+  }
+
+}
+//拒绝复合模态框
+.my-reject-modal-body-box{
+  .ivu-form .ivu-form-item-label{
+    line-height: 1;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #425263;
+  }
+  textarea.ivu-input{
+    width: 470px;
+    height: 182px;
+    padding:10px 15px;
+    overflow-y: auto;
+  }
+}
+//上传
+.upload-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 470px;
+  height: 182px;
+  padding:10px 15px;
+  background: #F8FAFF;
+  border: 1px solid #D7DAE3;
+  border-radius: 3px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #62717E;
+  line-height: 26px;
+  .ivu-upload-drag{
+    background: #F8FAFF;
+    border:none;
+    border-radius: 0px;
+  }
+  p{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #A1ADB6;
+    &:last-child{
+      font-size: 12px;
+    }
+  }
+}
+
+.uploda-small{
+  position: absolute;
+  bottom: 10px;
+  left: 1px;
+  .ivu-upload-drag{
+    background: #F8FAFF;
+    border:none;
+    border-radius: 0px;
+  }
+  .handle-box{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px 0px 15px;
+    .my-reset-btn{
+      width: 48px;
+      height: 28px;
+      font-family: PingFangTC-Regular;
+      font-size: 12px;
+      color: #425263;
+    }
+  }
+  .clear{
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+    width: 48px;
+    height: 28px;
+    font-family: PingFangTC-Regular;
+    font-size: 12px;
+    color: #425263;
+  }
+}
+
+//提交成功模态框
+.my-success-body-box{
+  //步骤图
+  .review-step {
+    width: 350px;
+    margin: 20px auto 5px;
+    .ivu-steps .ivu-steps-head {
+      background: #F8FAFF;
+    }
+    /*title*/
+    .ivu-steps .ivu-steps-title{
+      font-family: PingFangTC-Regular;
+      //font-size: 14px;
+      color: #62717E;
+      background: #F8FAFF;
+    }
+    //描述
+    .ivu-steps-horizontal .ivu-steps-content {
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: #A1ADB6;
+    }
+
+    //待完成线条
+    .ivu-steps-item.ivu-steps-status-process .ivu-steps-tail > i {
+      background: #D7DAE3;
+    }
+  }
+}
+
+

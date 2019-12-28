@@ -1,0 +1,561 @@
+/*清除表格边框*/
+/*body{*/
+/*  font-family: '微软雅黑' !important;*/
+/*}*/
+/*#app {*/
+/*  font-family: '微软雅黑' !important;*/
+/*}*/
+
+/*底部*/
+.layout-footer-center {
+  background: #031124 !important;;
+  text-align: center;
+  color: #ABD0FF !important;
+}
+
+/*面包屑*/
+
+.layout-breadcrumb {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 0 0 19px;
+  background: #031124 !important;
+
+}
+
+.ivu-breadcrumb a{
+  font-family: PingFang-SC-Medium;
+  font-size: 18px;
+  color: #ABD0FF !important;
+  text-align: left;
+}
+
+.ivu-breadcrumb-item-link{
+  color:#ABD0FF !important;
+  font-family: PingFang-SC-Medium;
+  font-size: 18px;
+  text-align: left;
+}
+
+
+
+
+
+
+/*面板*/
+.layout-content {
+  /*padding: 24px 25px;*/
+  height: calc(100vh - 70px);
+  background: red !important;
+}
+
+
+/*侧边栏*/
+.ivu-layout-sider{
+  max-width: 260px !important;
+  min-width: 260px !important;
+  width: 320px !important;
+  border-right: 15px solid #031124;
+  background: #162C4C !important;
+}
+
+
+.ivu-menu-vertical.ivu-menu-light:after{
+  background: #162C4C !important;
+}
+
+
+.ivu-menu-item{
+  background: #162C4C !important;
+  font-family: PingFang-SC-Regular;
+  font-size: 20px;
+  color: #fff!important;
+  text-align: left;
+  border-bottom: 1px solid #12305D;;
+}
+
+
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu){
+  color: #13B3FC !important;
+  background: #162C4C !important;
+  font-weight: bold;
+  z-index: 2;
+}
+
+
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu):after {
+  content: '';
+  display: block;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #162C4C;
+}
+
+.ivu-layout .ivu-layout-has-sider {
+  height: 100%;
+}
+
+
+
+
+
+/*右侧内容*/
+/*box*/
+.layout-content-box{
+  background: url('../assets/images/bg.png') center center;
+}
+.layout-content-box-title{
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  color: #13B3FC;
+  text-align: left;
+  margin: 14px 21px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #12305D;
+}
+
+/*表格*/
+.table-box{
+  margin: 30px 21px;
+}
+.ivu-table{
+  /*background: rgba(0,0,0,0.5);*/
+}
+
+.ivu-table th{
+  background-color: rgba(0,0,0,0);
+}
+.ivu-table td{
+  background: none;
+}
+.table{
+  width: 100%;
+  border-collapse:collapse
+  /*border: 1px solid #1A4078 ;*/
+}
+.my-table-header{
+  text-align: center;
+  opacity: 0.88;
+  background: #12305D;
+  font-family: PingFangTC-Semibold;
+  font-size: 20px;
+  color: #ABD0FF;
+}
+.td1{
+  width: 40%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.td2{
+  width: 60%;
+}
+.contentTd td{
+  padding: 20px 30px;
+  border-left:1px solid #1A4078 ;
+  border-bottom: 1px solid #1A4078;
+  font-family: PingFang-SC-Regular;
+  font-size: 20px;
+  color: #C8E0FF;
+}
+.contentTd td a{
+  cursor: pointer;
+}
+.border-r{
+  border-right:1px solid #1A4078 ;
+}
+/*.ivu-table{*/
+/*  font-size: 22px !important;*/
+/*  color:#abd0ff !important;*/
+/*}*/
+
+/*!*面板*!*/
+/*.layout-content-box {*/
+/*  padding: 10px 30px;*/
+/*  min-height: 280px;*/
+/*  background: rgb(255, 255, 255);*/
+/*}*/
+
+/*.layout-content-box-title {*/
+/*  font-size: 18px;*/
+/*  margin-bottom: 20px;*/
+/*}*/
+
+/*.ivu-card-body {*/
+/*  padding: 30px 20px 16px;*/
+/*}*/
+
+/*!*input 宽度*!*/
+/*.formWidth {*/
+/*  width: 50%  !important;*/
+/*}*/
+
+/*.selectWidth {*/
+/*  width: 55% !important;*/
+/*}*/
+
+
+/*!*字体*!*/
+/*.ivu-breadcrumb{*/
+/*  font-size: 22px !important;*/
+/*  font-family: '微软雅黑' !important;*/
+/*}*/
+
+
+
+/*.ivu-menu-item{*/
+/*  font-size: 20px !important;*/
+/*}*/
+
+/*.ivu-layout-sider{*/
+/*  border-right: 2px solid #1890ff !important;*/
+/*}*/
+/*.layout-content-box-title{*/
+/*  font-size: 20px !important;*/
+/*  color:#fff !important;*/
+/*}*/
+
+/*.ivu-table{*/
+/*  font-size: 22px !important;*/
+/*  color:#abd0ff !important;*/
+/*}*/
+
+
+/*.ivu-card{*/
+/*  !*color: #fff !important;*!*/
+/*  background: #013355 !important;*/
+/*}*/
+
+/*.ivu-card-head p{*/
+/*  font-size: 20px !important;*/
+/*  color:#fff !important;*/
+/*}*/
+
+/*.ivu-form-item-label{*/
+/*  width: 160px !important;*/
+/*  font-size: 20px !important;*/
+/*  color:#fff !important;*/
+/*}*/
+
+/*.ivu-radio-wrapper{*/
+/*  font-size: 20px !important;*/
+/*  color:#fff !important;*/
+/*}*/
+/*.ivu-form-item-error-tip{*/
+/*  font-size: 18px !important;*/
+/*  padding: 6px 0 6px !important;*/
+/*}*/
+
+
+/*.ivu-select-item{*/
+/*  font-size: 20px !important;*/
+/*}*/
+
+/*.ivu-select-single .ivu-select-selection .ivu-select-placeholder, .ivu-select-single .ivu-select-selection .ivu-select-selected-value{*/
+/*  font-size: 20px !important;*/
+/*}*/
+
+
+
+
+
+/*!*.ivu-table:after{*!*/
+/*!*  width: 0 !important;*!*/
+/*!*}*!*/
+
+/*!*.ivu-table-wrapper{*!*/
+/*!*  border:none !important;*!*/
+/*!*}*!*/
+/*.ivu-table{*/
+/*  border-color:#1890ff !important;*/
+/*}*/
+/*.ivu-table td{*/
+/*  background: #041231 !important;*/
+/*  border-color:#1890ff !important;*/
+/*}*/
+
+/*.ivu-table-header th{*/
+/*  color:#07fffd !important;*/
+/*  font-weight: bold !important;*/
+/*  background-color: #041231 !important;*/
+/*  border-color:#1890ff !important;*/
+/*  !*border-color: #07fffd !important;*!*/
+/*}*/
+
+
+
+/*.layout-footer-center{*/
+/*  background: #041231 !important;*/
+/*  font-size: 20px !important;*/
+/*  color:#fff !important;*/
+/*}*/
+
+
+/*.ivu-input{*/
+/*  background: #041231 !important;*/
+/*  color:#fff !important;*/
+/*  border: 1px solid #041231 !important;*/
+/*}*/
+
+/*.ivu-input-default{*/
+/*  font-size: 20px !important;*/
+/*  color:#fff !important;*/
+/*}*/
+/*.ivu-input-with-suffix{*/
+/*  color:#fff !important;*/
+/*}*/
+/*input::-webkit-input-placeholder{color:#fff !important; }*/
+
+
+/*.ivu-select{*/
+/*  background: #041231 !important;*/
+/*  color:#fff !important;*/
+/*}*/
+/*.ivu-select-selection{*/
+/*  color:#fff !important;*/
+/*  background: #041231 !important;*/
+/*}*/
+/*.ivu-select-dropdown{*/
+/*  background: #041231 !important;*/
+
+/*}*/
+/*.ivu-select-dropdown-list{*/
+/*  color:#fff !important;*/
+/*  font-size: 20px !important;*/
+/*}*/
+/*.ivu-select-item{*/
+/*  color:#fff !important;*/
+/*  font-size: 20px !important;*/
+/*}*/
+
+/*!*.ivu-select-item-selected{*!*/
+/*!*  background: red !important;*!*/
+/*!*}*!*/
+/*!*.ivu-select-item-focus{*!*/
+/*!*  background: yellow !important;*!*/
+/*!*}*!*/
+
+
+/*.ivu-select-placeholder{*/
+/*  color:#fff !important;*/
+/*}*/
+
+/*.ivu-select-item-focus, .ivu-select-item:hover {*/
+/*  background: #abd0ff !important;*/
+/*}*/
+
+/*!*按钮*!*/
+/*.btn,.btn1{*/
+/*  color:#fff;*/
+/*  background: #041231 !important;*/
+/*}*/
+
+/*.tip{*/
+/*  margin-bottom: 20px;*/
+/*}*/
+.form-box{
+  width: 100%
+}
+
+.ivu-form-item{
+  margin-bottom: 35px;
+}
+
+
+.my-title{
+  font-family: PingFang-SC-Regular;
+  font-size: 20px;
+  color: #81A0D0;
+  margin-bottom: 30px;
+}
+
+/*打包时注释*/
+/*宽度*/
+/*.ivu-select{*/
+/*  width: 50% !important;*/
+/*}*/
+/*.formWidth{*/
+/*  width: 50% !important;*/
+/*}*/
+
+/*字体大小*/
+.ivu-form-item-label{
+  font-family: PingFangSC-Regular;
+  font-size: 20px !important;
+  color: #C8E0FF !important;
+}
+
+/*input相关*/
+.ivu-input{
+  height: 38px;
+  background: #1B355A !important;
+  border-radius: 3px;
+  color:#fff !important;
+  border: 1px solid #1B355A !important;
+}
+/*日期*/
+.ivu-input-prefix i, .ivu-input-suffix i {
+  font-size: 16px;
+  line-height: 38px;
+  color: #808695;
+}
+
+
+.ivu-input-default{
+  font-size: 20px !important;
+  color:#81A0D0 !important;
+}
+.ivu-input-with-suffix{
+  color:#81A0D0 !important;
+}
+input::-webkit-input-placeholder{color:#81A0D0 !important; }
+
+
+.ivu-select{
+  background: #1B355A !important;
+  color:#81A0D0 !important;
+}
+.ivu-select-selection{
+  color:#81A0D0 !important;
+  background: #1B355A !important;
+  border: 1px solid #1B355A;
+}
+.ivu-select-dropdown{
+  background: #1B355A !important;
+
+}
+.ivu-select-dropdown-list{
+  color:#fff !important;
+  font-size: 20px !important;
+}
+.ivu-select-item{
+  color:#fff !important;
+  font-size: 20px !important;
+}
+
+/*!*.ivu-select-item-selected{*!*/
+/*!*  background: red !important;*!*/
+/*!*}*!*/
+/*!*.ivu-select-item-focus{*!*/
+/*!*  background: yellow !important;*!*/
+/*!*}*!*/
+
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder, .ivu-select-single .ivu-select-selection .ivu-select-selected-value{
+  font-size: 20px !important;
+}
+
+
+.ivu-select-placeholder{
+  color:#81A0D0 !important;
+}
+
+.ivu-select-item-focus, .ivu-select-item:hover {
+  color:#fff;
+  background: #13B3FC !important;
+}
+
+.ivu-radio-wrapper{
+  font-size: 20px !important;
+  color:#81A0D0 !important;
+}
+.ivu-form-item-error-tip{
+  font-size: 18px !important;
+  padding: 6px 0 6px !important;
+}
+
+/*!*按钮*!*/
+.btn,.btn1{
+  color:#fff;
+  font-size: 20px;
+  width: 100px;
+  background: #1A5AB5 !important;
+}
+.btn1{
+  margin-left: 30px;
+}
+
+
+/*日期*/
+.ivu-date-picker-cells-cell{
+  color:#fff !important;
+}
+.ivu-date-picker-cells-cell em:hover{
+  color:#fff !important;
+  background: #1A5AB5 !important;
+}
+.ivu-date-picker-cells-cell-prev-month{
+  color:#81A0D0 !important;
+}
+.ivu-date-picker-cells-cell-next-month{
+  color:#81A0D0 !important;
+}
+.ivu-date-picker-header-label{
+  color:#81A0D0 !important;
+}
+
+.ivu-date-picker-cells-cell-focused{
+  background: #1A5AB5 !important;
+}
+
+/*登录框*/
+.login-page .login-form .ivu-input{
+  background: #fff !important;
+  border:1px solid #ddd !important;
+}
+.login-page .login-form  .ivu-form-item-error .ivu-input{
+  border: 1px solid #ed4014 !important;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+/*input[type=text]:focus, input[type=password]:focus, textarea:focus {*/
+/*  -webkit-box-shadow: 0 0 0 1000px white inset;*/
+/*  border:solid 1.5px #2c97de;*/
+/*}*/
+.ivu-card-head{
+  padding: 20px 16px;
+}
+
+.ivu-card-head span{
+  font-size: 20px !important;
+}
+
+/*宽度*/
+.ivu-select{
+  width: 50% !important;
+}
+.formWidth{
+  width: 50% !important;
+}
+
+.ivu-select-input{
+  font-size: 20px;
+  color:#81A0D0 !important
+}
+
+
+/*解决日期问题*/
+.ivu-tabs{
+  height: 600px !important;
+}
+
+.ivu-date-picker .ivu-date-picker-rel input{
+  width: 213px !important;
+}
+.ivu-date-picker-rel{
+  width: 213px !important;
+}
+
+
+/*modal common css修改*/
+.ivu-btn-primary {
+  width: 150px;
+  font-size: 18px;
+}
+.ivu-modal-content {
+  background-color: #33383e !important;
+}
