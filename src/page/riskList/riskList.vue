@@ -12,6 +12,7 @@
             <template v-for="(item,index) in tableData" >
               <tr class="my-list-table-content listTable">
                 <td class="toRoute" @click="toRoute(item)">{{item.name}}</td>
+
                 <td  v-html="item.desc"></td>
               </tr>
             </template>
