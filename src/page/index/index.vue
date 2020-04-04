@@ -4,63 +4,11 @@
       <Layout>
         <api-header></api-header>
         <Layout>
-          <Content class="layout-content">
-            <Layout>
-              <Sider hide-trigger>
-                <template v-if="activeSiderIndex == '1'">
-                  <div class="my-menu" v-for="item in menu" :key="item.id">
-                    <ul class="my-menu-box" v-if="item.children && item.children.length !==0">
-                      <li class="my-menu-p" slot="title">
-                        <router-link :to={name:item.path,params:{id:item.id}}>
-                          <Icon color="#465585" class="my-icon" type="md-arrow-dropdown" />
-                          <img :src="item.img" alt="">
-                          <span class="tab-link">{{item.name}}</span>
-                        </router-link>
-                      </li>
-                      <li class="my-menu-c" v-for="sub in item.children" :key="sub.id">
-                        <router-link :to="{name:sub.path,params: {startTime: sub.startTime,endTime:sub.endTime,id:sub.id}}" >
-                          <span class="tab-link">{{sub.name}}</span>
-                        </router-link>
-                      </li>
-                    </ul>
-                    <ul v-else>
-                      <li class="my-menu-p">
-                        <router-link :to="item.path">
-                          <img :src="item.img" alt="">
-                          <span class="tab-link">{{item.name}}</span>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                </template>
-                <template v-if="activeSiderIndex =='2'">
-                  <div class="my-menu">
-                    <ul class="my-menu-box">
-                      <li class="my-menu-p">
-                        <router-link :to="{name:'watingProcess'}" >
-                          <span class="tab-link">待我处理<b :class="checkCodeList.length > 99 ? 'largeMsgNum' : 'msgNum'" v-if="checkCodeList.length>0">{{checkCodeList.length}}</b> </span>
-                        </router-link>
-                      </li>
-                      <li class="my-menu-p">
-                        <router-link :to="{name:'myApply'}" >
-                          <span class="tab-link">我的申请<b :class="commitCodeList.length > 99 ? 'largeMsgNum' : 'msgNum'" v-if="commitCodeList.length >0">{{commitCodeList.length}}</b> </span>
-                        </router-link>
-                      </li>
-<!--                      <li class="my-menu-p" v-for="item in menu2" :key="item.id">-->
-<!--                        <router-link :to="{name:item.path}" >-->
-<!--                          <span class="tab-link">{{item.name}}</span>-->
-<!--                        </router-link>-->
-<!--                      </li>-->
-                    </ul>
-                  </div>
-                </template>
-              </Sider>
-              <Content class="layout-content-box">
-                <router-view></router-view>
-              </Content>
-            </Layout>
+          <Content class="layout-content-box">
+            <router-view></router-view>
           </Content>
         </Layout>
+        <Footer class="footer">京ICP备20003021号</Footer>
       </Layout>
     </div>
   </div>
@@ -76,62 +24,6 @@
     name: "index",
     data() {
       return {
-        menu: [
-          {
-            id: 1,
-            name: '风控API',
-            desc: null,
-            path: 'riskList',
-            img:'../../../static/img/risk.png',
-            children: [
-              {
-                id: 1 - 1,
-                name: '对公客户交易流水验真',
-                desc: null,
-                startTime: "2018-10-31T16:00:00.000+0000",
-                endTime:'2018-10-31T16:00:00.000+0000',
-                path: 'publicClient',
-              },
-              {
-                id: 1 - 2,
-                name: '信贷资金流向监控',
-                startTime: "2018-10-31T16:00:00.000+0000",
-                endTime:'2018-10-31T16:00:00.000+0000',
-                desc: null,
-                path: 'creditFunds',
-              }
-            ]
-          },
-          {
-            id: 2,
-            name: '合规API',
-            path: 'grcList',
-            desc: null,
-            img:'../../../static/img/grc.png',
-            children: [
-              {
-                id: 1 - 2,
-                name: '银行卡和账户情况查询',
-                desc: null,
-                startTime: "2018-10-31T16:00:00.000+0000",
-                endTime:'2018-10-31T16:00:00.000+0000',
-                path: 'bankApi',
-              }
-            ]
-          }
-        ],
-        menu2:[
-              {
-                id: 1,
-                name: '待我处理',
-                path: 'watingProcess',
-              },
-              {
-                id: 2,
-                name: '我的申请',
-                path: 'myApply',
-              }
-        ],
         siderList: [],
         activeMenu: 1,
         currentMenuName: '',
@@ -283,6 +175,13 @@
     background: #E33E3E;
     border-radius: 50%;
     font-size: 10px;
+  }
+
+  .footer{
+    background: #000;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
   }
 
 </style>

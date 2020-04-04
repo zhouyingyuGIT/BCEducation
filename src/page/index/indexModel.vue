@@ -77,7 +77,7 @@
             id: 7,
             name: '风险合规',
             desc: null,
-            path: 'riskList',
+            path: 'index',
             img:'../../../static/img/risk.png',
             children: [
               {

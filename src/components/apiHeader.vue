@@ -2,28 +2,18 @@
   <div>
     <Header class="apiHeader">
       <Menu mode="horizontal" theme="dark" :active-name="activeMenuName" @on-select="selectItem">
-        <div class="layout-logo">
-          <img class="layout-logo-img" src="../assets/img/logo.png" alt="">
-        </div>
-<!--        新增-->
-<!--        <div class="layout-nav">-->
-<!--          <MenuItem name="1" style="width: 120px">-->
-<!--              <img class="item-logo" src="../../static/img/shujuApi.png" alt="">-->
-<!--              数据API-->
-<!--          </MenuItem>-->
-<!--          <MenuItem name="2" style="width: 120px">-->
-<!--            <div class="message-tip-box">-->
-<!--              <img class="item-logo" src="../../static/img/fuhe.png" alt="">-->
-<!--              <div v-if="msgTotal >0"  :class="msgTotal> 99 ? 'largeRed-tip' :'red-tip' "><span v-if="msgTotal >0">{{msgTotal}}</span></div>-->
-<!--              数据复核-->
-<!--            </div>-->
-<!--          </MenuItem>-->
-<!--        </div>-->
+        <MenuItem name="baichuan" disabled>
+          百川教育
+        </MenuItem>
+        <MenuItem name="index" to="/index">
+          首页
+        </MenuItem>
+        <MenuItem name="grcList" to="/grcList">
+          关于我门
+        </MenuItem>
+
         <div class="user-box">
-<!--          <div class="feedback" @click="handleFeedBack">-->
-<!--            <img src="../../static/img/fankuiyijian.png" alt="">-->
-<!--            <span>写反馈</span>-->
-<!--          </div>-->
+
           <img class="avator" src="../assets/images/touxiang.png" alt="">
           <Dropdown>
             <a href="javascript:void(0)" class="user-name">
@@ -90,7 +80,7 @@
     methods: {
       // 选择模块
       selectItem(name){
-        // console.log(name);
+        console.log(name);
         if(name ==2){
           this.$router.push('/review')
         }else{
@@ -138,7 +128,7 @@
 <style lang="scss" scoped>
   /*颜色定义规范*/
   $color-theme: #F90;
-  $color-background: #2E3C6A;
+  $color-background: #2496DD;
   $color-text: #fff;
   //字体定义规范
   $font-size-small: 14px;
@@ -146,21 +136,18 @@
   $font-size-large: 18px;
   $font-size-large-x: 20px;
   .apiHeader {
-    height: 70px;
+    height: 60px;
     background: $color-background;
     /*修改layout-header默认样式*/
     .ivu-layout-header, .ivu-menu-dark {
       background: $color-background !important;
     }
 
-    .ivu-menu-horizontal {
-      line-height: 0px;
-    }
 
     .layout-logo {
-      height: 68px;
+      height: 60px;
       float: left;
-      line-height: 68px;
+      line-height: 60px;
       cursor: pointer;
       .layout-logo-img {
         display: inline-block;
@@ -172,8 +159,8 @@
 
     /*新增*/
     .layout-nav{
-      height: 68px;
-      line-height: 68px;
+      height: 60px;
+      line-height: 60px;
       float: left;
       margin-left: 58px;
       font-family: PingFangSC-Regular;
@@ -199,7 +186,7 @@
     .user-box {
       height: 100%;
       float: right;
-      line-height: 66px;
+      line-height: 60px;
       margin-right: 20px;
       .feedback {
         display: inline-block;
@@ -283,7 +270,7 @@
       height: 20px;
       border-radius: 50%;
       background: #E33E3E;
-      border: 1px solid #2E3C6A;
+      border: 1px solid #2496DD;
       font-size: 10px;
       line-height: 20px;
       text-align: center;
@@ -295,7 +282,7 @@
       height: 20px;
       border-radius: 50%;
       background: #E33E3E;
-      border: 1px solid #2E3C6A;
+      border: 1px solid #2496DD;
       font-size: 10px;
       text-align: center;
       right: -20px;

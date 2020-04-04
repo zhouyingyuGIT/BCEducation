@@ -1,3 +1,8 @@
+.ivu-menu-item{
+  font-size: 18px;
+}
+
+/*
 
 .ivu-layout-header {
   padding: 0 19px !important;
@@ -5,7 +10,7 @@
 
 
 
-//**面包屑**
+/!**面包屑**
 .my-breadCrumb{
   height: 50px;
   width: 100%;
@@ -21,7 +26,7 @@
 //content
 .layout-content-box{
   background: #D7DAE3;
-  /*background: url('../assets/images/bg.png') center center;*/
+  !*background: url('../assets/images/bg.png') center center;*!
 }
 
 .layout-content {
@@ -99,7 +104,7 @@
 }
 
 
-/*表格start*/
+!*表格start*!
 .my-list-table-box{
   margin: 22px 40px 0px;
   //表格暂无数据
@@ -126,7 +131,7 @@
     text-align: center;
     .my-list-table-header{
       height: 50px;
-      background: #2E3C6A;
+      background: #2496DD;
       border-radius: 3px 3px 0 0;
       th{
         height: 50px;
@@ -171,7 +176,7 @@
     }
   }
 }
-/*表格end*/
+!*表格end*!
 
 
 //自定义input
@@ -238,13 +243,13 @@
 }
 
 
-/*侧边栏*/
+!*侧边栏*!
 .ivu-layout-sider{
   max-width: 240px !important;
   min-width: 240px !important;
   width: 24px !important;
   padding-top: 20px;
-  /*border-right: 15px solid #031124;*/
+  !*border-right: 15px solid #031124;*!
   background: #111B39 !important;
 }
 
@@ -280,12 +285,12 @@
   margin-bottom: 30px;
 }
 
-/*单条查询-批量查询-label*/
+!*单条查询-批量查询-label*!
 .tem_label .ivu-form-item-label {
   line-height: 150px !important;
 }
 
-/*字体大小*/
+!*字体大小*!
 .ivu-form-item-label{
   font-family: PingFangSC-Regular;
   font-size: 16px !important;
@@ -293,7 +298,7 @@
   color: #425263;
 }
 
-/*input相关*/
+!*input相关*!
 .ivu-input{
   width: 220px;
   height: 50px;
@@ -342,7 +347,7 @@ input::-webkit-input-placeholder{
 
 
 
-/*日期*/
+!*日期*!
 //.ivu-input-prefix i, .ivu-input-suffix i {
 //  font-size: 16px;
 //  line-height: 38px;
@@ -354,9 +359,9 @@ input::-webkit-input-placeholder{
 }
 
 //iview-select
-/*.spe_select .ivu-select{
+!*.spe_select .ivu-select{
   width: 160px !important;
-}*/
+}*!
 
 .ivu-select{
   //width: 220px !important;
@@ -412,7 +417,7 @@ input::-webkit-input-placeholder{
   font-size: 16px;
 }
 
-/*登录框*/
+!*登录框*!
 .login-page .login-form .ivu-input{
   background: #fff !important;
   border:1px solid #ddd !important;
@@ -428,10 +433,10 @@ input::-webkit-input-placeholder{
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset;
 }
-/*input[type=text]:focus, input[type=password]:focus, textarea:focus {*/
-/*  -webkit-box-shadow: 0 0 0 1000px white inset;*/
-/*  border:solid 1.5px #2c97de;*/
-/*}*/
+!*input[type=text]:focus, input[type=password]:focus, textarea:focus {*!
+!*  -webkit-box-shadow: 0 0 0 1000px white inset;*!
+!*  border:solid 1.5px #2c97de;*!
+!*}*!
 .ivu-card-head{
   padding: 20px 16px;
 }
@@ -441,7 +446,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 
-/*modal common css修改*/
+!*modal common css修改*!
 .ivu-btn-primary {
   width: 150px;
   font-size: 18px;
@@ -693,7 +698,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     .ivu-steps .ivu-steps-head {
       background: #F8FAFF;
     }
-    /*title*/
+    !*title*!
     .ivu-steps .ivu-steps-title{
       font-family: PingFangTC-Regular;
       //font-size: 14px;
@@ -715,3 +720,4 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 
+*/

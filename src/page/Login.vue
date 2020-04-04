@@ -2,7 +2,8 @@
   <div class="container">
 <!--    <img class="background" src="../assets/images/login-bg.png" />-->
     <div class="login-con">
-      <img class="logo_img" src="../assets/images/logo.png">
+      <div>百川教育</div>
+<!--      <img class="logo_img" src="../assets/images/logo.png">-->
       <Form ref="loginForm" class="login-form" :model="form" :rules="rules">
         <FormItem prop="username">
           <img src="../assets/images/user.png">
@@ -77,23 +78,20 @@
   .container {
     width: 100%;
     height: 100vh;
-    background-image: url('../assets/images/login-bg.png');
-    background-size: cover;
-    background-position: center;
     position: relative;
     .login-con {
+      background: #1f7bde;
       text-align: center;
       margin: 0 auto;
+      padding: 16px 0;
       transform: translateY(22%);
-      background-image: url('../assets/images/login-from.png');
-      background-repeat-y: no-repeat;
-      background-size: 100% 100%;
-      width: 700px;
+      border-radius: 10px;
+      width: 500px;
       img.logo_img {
-        margin-top: 100px;
+        /*margin-top: 100px;*/
+        padding: 8px;
       }
       form {
-        margin-top: 60px;
         input.verCode {
           width: 240px;
         }
@@ -161,8 +159,8 @@
       font-weight: bold;
       border-radius: 5px;
       border: none;
-      font-family: 微软雅黑;
-      margin-bottom: 80px;
+      /*font-family: 微软雅黑;*/
+      /*margin-bottom: 80px;*/
     }
   }
 

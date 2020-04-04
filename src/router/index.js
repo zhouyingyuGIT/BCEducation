@@ -2,7 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 Vue.use(Router)
-
+const routerPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return routerPush.call(this, location).catch(error=> error)
+}
 export default new Router({
   routes: [
     {
@@ -14,7 +17,7 @@ export default new Router({
       path: '/login',
       component: resolve => require(['../page/Login.vue'], resolve),
       meta: {
-        title: '智能API | 登录'
+        title: '百川教育 | 登录'
       }
     },
     {
@@ -22,7 +25,7 @@ export default new Router({
       path:'/indexModel',
       component:resolve => require(['../page/index/indexModel.vue'],resolve),
       meta: {
-        title: '智能API | 菜单'
+        title: '百川教育 | 菜单'
       }
     },
     {
@@ -35,18 +38,18 @@ export default new Router({
     },
     {
       path: '/index',
-      redirect: '/riskList',
+      redirect: '/index',
       meta: {
-        requireAuth: true, // 判断是否需要登录
+        requireAuth: false, // 判断是否需要登录
       },
       component: resolve => require(['../page/index/index.vue'], resolve),
       children: [
         {
-          name:'riskList',
-          path:'/riskList',
-          component:resolve => require(['../page/riskList/riskList.vue'],resolve),
+          name:'index',
+          path:'/index',
+          component:resolve => require(['../page/home/index.vue'],resolve),
           meta: {
-            title: '智能API'
+            title: '百川教育'
           }
         },
         {
@@ -54,7 +57,7 @@ export default new Router({
           path:'/grcList',
           component:resolve => require(['../page/grcList/grcList.vue'],resolve),
           meta: {
-            title: '智能API'
+            title: '百川教育'
           }
         },
         {
@@ -62,7 +65,7 @@ export default new Router({
           path:'/publicClient',
           component:resolve => require(['../page/publicClient/publicClient.vue'],resolve),
           meta: {
-            title: '智能API'
+            title: '百川教育'
           }
         },
         {
@@ -70,7 +73,7 @@ export default new Router({
           path:'/dataSharing',
           component:resolve => require(['../page/dataSharing/dataSharing.vue'],resolve),
           meta: {
-            title: '智能API'
+            title: '百川教育'
           }
         },
         {
@@ -78,7 +81,7 @@ export default new Router({
           path:'/creditFunds',
           component:resolve => require(['../page/creditFunds/creditFunds.vue'],resolve),
           meta: {
-            title: '智能API'
+            title: '百川教育'
           }
         },
         {
@@ -86,7 +89,7 @@ export default new Router({
           path:'/bankApi',
           component:resolve => require(['../page/bankApi/bankApi.vue'],resolve),
           meta: {
-            title: '智能API'
+            title: '百川教育'
           }
         },
         {
@@ -94,7 +97,7 @@ export default new Router({
           path:'/accountApi',
           component:resolve => require(['../page/accountApi/accountApi.vue'],resolve),
           meta: {
-            title: '智能API'
+            title: '百川教育'
           }
         },
         {
@@ -117,7 +120,7 @@ export default new Router({
           path:'/codeSearch',
           component:resolve => require(['../page/codeSearch/codeSearch.vue'],resolve),
           meta: {
-            title: '智能API'
+            title: '百川教育'
           }
         }
       ]
