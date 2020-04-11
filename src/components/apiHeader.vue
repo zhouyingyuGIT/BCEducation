@@ -8,7 +8,7 @@
         <MenuItem name="index" to="/index">
           首页
         </MenuItem>
-        <MenuItem name="grcList" to="/grcList">
+        <MenuItem name="about" to="/about">
           关于我门
         </MenuItem>
 
@@ -51,7 +51,7 @@
         // activeMenuName:'',
         passwordModal: false,
         modal_loading: false,
-        username: sessionStorage.getItem('username') || "管理员：admin",
+        username: localStorage.getItem('username') || "管理员：admin",
       }
     },
     created(){
@@ -82,9 +82,9 @@
       selectItem(name){
         console.log(name);
         if(name ==2){
-          this.$router.push('/review')
+          // this.$router.push('/review')
         }else{
-          this.$router.push('/index')
+          // this.$router.push('/index')
         }
         // this.activeMenuName = name
 

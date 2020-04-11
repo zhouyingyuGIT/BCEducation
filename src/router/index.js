@@ -53,13 +53,13 @@ export default new Router({
           }
         },
         {
-          name:'grcList',
-          path:'/grcList',
-          component:resolve => require(['../page/grcList/grcList.vue'],resolve),
+          name:'about',
+          path:'/about',
+          component:resolve => require(['../page/about/about.vue'],resolve),
           meta: {
             title: '百川教育'
           }
-        },
+        }/*,
         {
           name:'publicClient',
           path:'/publicClient',
@@ -122,7 +122,7 @@ export default new Router({
           meta: {
             title: '百川教育'
           }
-        }
+        }*/
       ]
     },
     {
@@ -133,7 +133,7 @@ export default new Router({
       },
       component: resolve => require(['../page/index/index.vue'], resolve),
       children: [
-        {
+        /*{
           name:'myApply',
           path:'/myApply',
           component:resolve => require(['../page/dataCheck/myApply/myApply.vue'],resolve)
@@ -152,7 +152,7 @@ export default new Router({
           name:'reviewDetails',
           path:'/myApply/reviewDetails',
           component:resolve => require(['../page/dataCheck/reviewDetails/reviewDetails.vue'],resolve)
-        }
+        }*/
       ]
     },
   ]

@@ -40,7 +40,7 @@
           {
             id: 2,
             name: '支持实体',
-            path: 'grcList',
+            path: 'about',
             img:'../../../static/img/grc.png',
             desc: null,
             children: [

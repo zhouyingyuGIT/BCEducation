@@ -7,6 +7,20 @@ export function login(params) {
     data:params
   })
 }
+export function register(params) {
+  return fetch({
+    url:`/api/sso/register`,
+    method:'post',
+    data:params
+  })
+}
+
+export function getAuthCode(Code) {
+  return fetch({
+    url:`/api/sso/getAuthCode?phone=`+Code,
+    method: 'get'
+  })
+}
 
 export function getUser() {
   return fetch({

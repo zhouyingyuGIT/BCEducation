@@ -8,17 +8,12 @@
       </CarouselItem>
       <CarouselItem>
         <div class="demo-carousel">
-          <img style="height: 100%;width: 100%" src="../../assets/img/logo1.jpg" alt="">
+          <img style="height: 100%;width: 100%" src="../../assets/img/logo2.jpg" alt="">
         </div>
       </CarouselItem>
       <CarouselItem>
         <div class="demo-carousel">
-          <img style="height: 100%;width: 100%" src="../../assets/img/logo1.jpg" alt=""></div>
-      </CarouselItem>
-      <CarouselItem>
-        <div class="demo-carousel">
-          <img style="height: 100%;width: 100%" src="../../assets/img/logo1.jpg" alt="">
-        </div>
+          <img style="height: 100%;width: 100%" src="../../assets/img/logo3.jpg" alt=""></div>
       </CarouselItem>
     </Carousel>
 
@@ -39,7 +34,40 @@
       </Row>
     </div>
 
-    <div class="fort" style="height: 200px;margin-bottom: 60px;background: #fff">
+    <div class="indexBox">
+      <div class="title">为学生提供“3”大支撑</div>
+      <div class="describe">百川教育全面革新英语教学模式，线上线下相结合，构筑智能英语学习生态</div>
+
+      <Row>
+        <Col span="18" offset="3">
+          <Row>
+            <Col span="6" class="item">
+              <div class="imgBox">
+                <img src="../../assets/index/pinpai.png" alt="">
+              </div>
+              <p class="title">品牌升级</p>
+              <p class="cont">线上线下结合，全面实现互联网+</p>
+            </Col>
+            <Col span="6" offset="3" class="item">
+              <div class="imgBox">
+                <img src="../../assets/index/cont.png" alt="">
+              </div>
+              <p class="title">内容深度定制</p>
+              <p class="cont">根据机构教材定制，实现课堂、课后无缝衔接</p>
+            </Col>
+            <Col span="6" offset="3" class="item">
+              <div class="imgBox">
+                <img src="../../assets/index/yuyin.png" alt="">
+              </div>
+              <p class="title">智能语音评测</p>
+              <p class="cont">科大讯飞评测技术，对接中高考口语标准</p>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </div>
+
+    <div class="">
 
     </div>
 
@@ -204,5 +232,47 @@
       font-size: 1.6em;
     }
 
+  }
+  .indexBox{
+    padding: 48px 0px;
+    background: #fff;
+    font-size: 12px;
+    .title{
+      font-size: 2.4em;
+      text-align: center;
+      line-height: 1.2em;
+      margin-bottom: 32px;
+      font-weight: 900;
+    }
+    .describe{
+      text-align: center;
+      font-size: 1.6em;
+      margin-bottom: 48px;
+    }
+    .item{
+      /*background: #2d8cd3;*/
+      height: 300px;
+      .imgBox{
+        height: 120px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 18px;
+        img{
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+      .title{
+        font-size: 2em;
+        color: #000;
+        font-weight: 900;
+        margin-bottom: 16px;
+      }
+      .cont{
+        padding: 0 16px;
+        text-align: center;
+        font-size: 1.6em;
+      }
+    }
   }
 </style>
