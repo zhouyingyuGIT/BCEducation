@@ -129,6 +129,7 @@
         this.$refs[name].validate((valid) => {
           if (valid) {
             let formdata = new FormData();
+
             formdata.append("username",this.login.username);
             formdata.append("password",this.login.password);
             login(formdata).then((res) => {
