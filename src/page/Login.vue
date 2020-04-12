@@ -136,7 +136,7 @@
                 //登录成功 -- 跳转到首页
                 console.log(res)
                 localStorage.setItem("username",res.data.userName);
-                this.$router.push('/index')
+                // this.$router.push('/index')
               } else {
                 //登录失败-返回错误信息
                 this.$Message.error(res.message);

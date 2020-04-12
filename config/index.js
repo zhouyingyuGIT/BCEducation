@@ -2,8 +2,8 @@
 // Template version: 1.3.1
 // see http://vuejs-templates.github.io/webpack for documentation.
 
-const path = require('path')
-const target = 'http://39.97.181.171:8080'
+const path = require('path');
+const target = 'http://api.qidianbaichuan.com';
 //const target = 'http://192.168.101.117:9404'
 //  const target = 'http://192.168.43.119:9404'
 module.exports = {

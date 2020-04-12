@@ -23,6 +23,11 @@
         <Row>
           <i-col span="20" offset="2">
             <div class="title">联系我们</div>
+            <div class="itemBox">
+              <p>联系人：周颖瑜</p>
+              <p>电话：18001157326</p>
+              <p>电子邮件：18001157326@163.com</p>
+            </div>
           </i-col>
         </Row>
       </div>

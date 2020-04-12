@@ -28,14 +28,14 @@ export default new Router({
         title: '百川教育 | 菜单'
       }
     },
-    {
+    /*{
       name:'codeSearchDetail',
       path:'/codeSearchDetail',
       component:resolve => require(['../page/codeSearch/codeSearchDetail.vue'],resolve),
       meta: {
         keepAlive: true
       }
-    },
+    },*/
     {
       path: '/index',
       redirect: '/index',
