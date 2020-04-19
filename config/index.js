@@ -3,9 +3,9 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path');
-const target = 'http://api.qidianbaichuan.com';
+const target = 'http://www.qidianbaichuan.com';
 //const target = 'http://192.168.101.117:9404'
-//  const target = 'http://192.168.43.119:9404'
+//  const target = 'http://192.168.43.119:9 404'
 module.exports = {
   dev: {
     // Paths

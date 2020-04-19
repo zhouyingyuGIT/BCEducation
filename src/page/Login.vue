@@ -68,8 +68,8 @@
     data() {
       return {
         login: {
-          username: '',
-          password: '',
+          username: 'zhouyingyu',
+          password: '123456',
         },
         login_register_src:registerUrl,
         authCodeBtn:false,
@@ -128,16 +128,16 @@
       handleSubmit(name) {
         this.$refs[name].validate((valid) => {
           if (valid) {
+            sessionStorage.clear();
+            localStorage.clear();
             let formdata = new FormData();
-
             formdata.append("username",this.login.username);
             formdata.append("password",this.login.password);
             login(formdata).then((res) => {
-              if(res.code == 200){
+              if(res.status == 200){
                 //登录成功 -- 跳转到首页
-                console.log(res)
-                localStorage.setItem("username",res.data.userName);
-                // this.$router.push('/index')
+                localStorage.setItem("userInfo",res.data);
+                this.$router.push('/index')
               } else {
                 //登录失败-返回错误信息
                 this.$Message.error(res.message);
@@ -159,7 +159,7 @@
             formdata.append("authCode",this.register.authCode);
             register(formdata).then((res) => {
               console.log(res)
-              if(res.code == 200){
+              if(res.status == 200){
                 //登录成功 -- 跳转到首页
                 this.$Message.success(res.message);
                 this.login_register=false;
@@ -183,7 +183,7 @@
         }else {
           var Code=this.register.phone;
           getAuthCode(Code).then((res) => {
-            if(res.code == 200){
+            if(res.status == 200){
               this.authCodeBtn=true;
               this.authCodeTitle="60秒";
               const TIME_COUNT = 60;

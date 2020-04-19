@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="apiHeader">
     <Header class="apiHeader">
       <Menu mode="horizontal" theme="dark" :active-name="activeMenuName" @on-select="selectItem">
         <MenuItem name="baichuan" disabled>
@@ -11,9 +11,12 @@
         <MenuItem name="about" to="/about">
           关于我门
         </MenuItem>
-
-        <div class="user-box">
-
+        <div class="user-box" v-if="!Login_register">
+          <MenuItem name="login" to="/login">
+            登陆
+          </MenuItem>
+        </div>
+        <div class="user-box" v-if="Login_register">
           <img class="avator" src="../assets/images/touxiang.png" alt="">
           <Dropdown>
             <a href="javascript:void(0)" class="user-name">
@@ -49,6 +52,7 @@
     data() {
       return {
         // activeMenuName:'',
+        Login_register: false,
         passwordModal: false,
         modal_loading: false,
         username: localStorage.getItem('username') || "管理员：admin",
@@ -88,11 +92,14 @@
         }
         // this.activeMenuName = name
 
-        this.updateNav(name)
-        this.updateSider(name)
+        this.updateNav(name);
+        this.updateSider(name);
         //
         // sessionStorage.setItem('selectedItem',name)
         // this.$emit('eventSelectItem',name);
+      },
+      token(){
+        // localStorage.setItem('token',response.headers['authorization']);
       },
       // 返回着陆页
       goIndex(){
@@ -100,10 +107,11 @@
       },
       // 退出
       logout() {
-        sessionStorage.clear()
-        this.updateNav(1)
-        this.updateSider(1)
-        this.$router.push('/')
+        sessionStorage.clear();
+        localStorage.clear();
+        this.updateNav(1);
+        this.updateSider(1);
+        this.$router.push('/login')
       },
       // 打开反馈模态框
       handleFeedBack() {
@@ -135,6 +143,9 @@
   $font-size-normal: 16px;
   $font-size-large: 18px;
   $font-size-large-x: 20px;
+  #apiHeader .ivu-menu-item-active{
+    color: #000;
+  }
   .apiHeader {
     height: 60px;
     background: $color-background;

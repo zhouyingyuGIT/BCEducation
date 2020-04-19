@@ -142,7 +142,7 @@
         applyCommit(params).then((res) => {
           console.log(res);
           this.submitLoading =false
-          if(res.code == 10000){
+          if(res.status == 10000){
             this.openSuccessModal(res.data)
           }else{
             this.submitLoading =false

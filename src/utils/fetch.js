@@ -3,7 +3,7 @@ import axios from 'axios'
 //定义base url
 //window.developApi = "http://192.168.8.125:9404"; // 全局服务地址
 
- const developApi =''
+ const developApi ='';
 
 //创建axios实例
 const service = axios.create({
@@ -28,9 +28,10 @@ service.interceptors.request.use(config => {
 //response -- 接口返回数据--信息拦截
 service.interceptors.response.use(response => {
   const res = response.data;
-  if( res.code === 200) {
+  if( res.status === 200) {
     //http请求成功 --本地存储token
-    sessionStorage.setItem('token',response.headers['token'])
+    sessionStorage.setItem('token',response.headers['authorization']);
+    localStorage.setItem('token',response.headers['authorization']);
     return res
   } else {
     //http请求失败

@@ -60,7 +60,7 @@
                 content:this.formValidate.contact
               }
               feedback(params).then((res) => {
-                if(res.code == 10000){
+                if(res.status == 10000){
                   this.visible = false
                   this.$Notice.success({
                     title: '反馈提交成功',

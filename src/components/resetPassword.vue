@@ -112,7 +112,7 @@
             }
             confirmPassword(params).then(res => {
               console.log(res);
-              if (res.code === '10000') {
+              if (res.status === '10000') {
                 this.modal_loading = false;
                 Notice.success({
                   title: '密码修改成功!',
